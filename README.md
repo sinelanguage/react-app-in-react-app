@@ -16,5 +16,5 @@ Prove that we can host 1 modern React App (child), in an iFrame, that is hosted 
 To run:
 
 ```js
-cd server && node index
+cd server && yarn && node index
 ```
