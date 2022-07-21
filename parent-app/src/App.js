@@ -33,9 +33,7 @@ function App() {
           Data from Redux state: {message}
         </p>
         <button
-          onClick={() => {
-            post();
-          }}
+          onClick={post}
         >
           Post message to BroadcastChannel
         </button>
