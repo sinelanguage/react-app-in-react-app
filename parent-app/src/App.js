@@ -22,7 +22,7 @@ function App() {
     console.log(parent.sub[0].message + randomNum, event);
   };
 
-  const message = useSelector((state) => state.parentApp.message);
+  const message = useSelector(state => state.parentApp.message);
 
   return (
     <div>
