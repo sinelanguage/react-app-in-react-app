@@ -8,8 +8,8 @@ const {child, channel} = broadcastChannelDefaults;
 const store = new ChildAppStore();
 
 function App() {
-
-  const ldpChannelRef = useRef(new BroadcastChannel(channel.name));
+  const broadcastChannel = new BroadcastChannel(channel.name)
+  const ldpChannelRef = useRef(broadcastChannel);
   const ldpChannel = ldpChannelRef.current;
 
   const post = () => {
