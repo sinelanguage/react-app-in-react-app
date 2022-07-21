@@ -7,8 +7,8 @@ import { broadcastChannelDefaults } from './constants';
 const {parent, channel} = broadcastChannelDefaults
 
 function App() {
-  const broadCastChannel = new BroadcastChannel(channel.name);
-  const ldpChannelRef = useRef(broadCastChannel);
+  const broadcastChannel = new BroadcastChannel(channel.name);
+  const ldpChannelRef = useRef(broadcastChannel);
   const ldpChannel = ldpChannelRef.current;
   const dispatch = useDispatch();
 
